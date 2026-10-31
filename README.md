@@ -44,7 +44,7 @@ git clone https://gitlab.com/OrangeFox/sync.git
 Clone this repository into `device/samsung/gta8wifi`:
 
 ```bash
-git clone https://github.com/encipherdev/android_device_samsung_gta8wifi.git -b fox_12.1 device/samsung/gta8wifi
+git clone https://github.com/encipherdev/android_recovery_samsung_gta8wifi.git -b fox-12.1 device/samsung/gta8wifi
 ```
 
 ### 3. Build Note (DRM Backend)
