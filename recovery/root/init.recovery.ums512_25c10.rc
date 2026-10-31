@@ -1,15 +1,14 @@
-#add for board init.rc for recovery mode
-import /init.recovery.common.rc
- 
-wait /dev/block/platform/soc/${ro.boot.bootdevice}
+#
+# Copyright (C) 2023-2026 The Android Open Source Project, encipherdev
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on init
+    # Set USB controller for ADB & MTP on Unisoc ums512
+    setprop sys.usb.controller musb-hdrc.0.auto
+    setprop sys.usb.config adb
+
+on fs
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    
-    export ANDROID_ROOT /system_root
-
-on late-fs
-   … 
-    # Wait for keymaster
-    exec_start wait_for_keymaster
-
-    # Mount RW partitions which need run fsck
-    mount_all /system/etc/recovery.fstab --late

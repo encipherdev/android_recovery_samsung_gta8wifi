@@ -14,6 +14,7 @@
 #
 
 on boot
+    setprop sys.usb.controller musb-hdrc.0.auto
     mount configfs none /config
     mkdir /config/usb_gadget/g1 0770 shell shell
     mkdir /config/usb_gadget/g1/strings/0x409 0770 shell shell
