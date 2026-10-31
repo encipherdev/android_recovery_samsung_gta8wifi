@@ -1,5 +1,8 @@
 # OrangeFox Recovery Device Tree for Samsung Galaxy Tab A8 (SM-X200)
 
+[![XDA Thread](https://img.shields.io/badge/XDA-Thread-orange?logo=xda-developers)](https://xdaforums.com/t/recovery-unofficial-orangefox-recovery-project-r12-0_1-sm-x200-gta8wifi.4807121/)
+[![GitHub Release](https://img.shields.io/github/v/release/encipherdev/android_recovery_samsung_gta8wifi?color=orange&logo=github)](https://github.com/encipherdev/android_recovery_samsung_gta8wifi/releases/tag/R12.0_1)
+
 Device tree for building OrangeFox Recovery R12.1 for the Samsung Galaxy Tab A8 10.5 (2021) Wi-Fi (`gta8wifi` / `SM-X200`).
 
 ## Device Specifications
